@@ -1,0 +1,48 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.flex-container{
+    display: flex; /*changes between row or column. this is horizontal with a row and vertical with a column*/
+    /* /* height: 500px; */
+    background-color: lightgrey;
+    /*justify content is always on the main axis*/
+    /* justify-content:start; */
+    /*align items is always on the cross axis*/
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+}
+.item{
+    flex:1;
+    /* flex-grow:1; */
+    /* flex-basis:300px; */
+    /* width: 100px; */
+    height: 100px;
+    color:white;
+    margin:10px;
+    background: blue ;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.item:nth-of-type(1){ 
+    /* flex-basis:300px; */
+    /* order: 2; */
+    /* flex-grow:3; */
+    flex-shrink: 1;
+}
+.item:nth-of-type(2){
+    /* flex-basis:500px; */
+    /* order: 1; */
+    /* flex-grow:1; */
+    flex-shrink: 2;
+
+
+}
+.item:nth-of-type(3){
+    /* flex-basis:200px; */
+    /* order:3; */
+    /* flex-grow:2; */
+    /* flex-shrink: 3; */
+
+
+}
